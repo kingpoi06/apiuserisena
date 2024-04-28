@@ -1,0 +1,8 @@
+# Set default behavior for all files
+* text=auto
+
+# Explicitly declare text files you want to always be normalized and converted to CRLF
+*.txt text eol=crlf
+
+# Ignore changes to package-lock.json
+package-lock.json -text
