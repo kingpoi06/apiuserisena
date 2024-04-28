@@ -46,7 +46,7 @@ app.use(session({
 // }
 app.use(cors({
     credentials: true,
-    origin: '*',
+    origin: 'https://fe-userisena.vercel.app',
     // origin: 'https://isena-fktp.vercel.app',
 }))
 
