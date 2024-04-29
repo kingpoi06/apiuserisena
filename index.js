@@ -46,8 +46,8 @@ app.use(session({
 // }
 app.use(cors({
     credentials: true,
-    origin: 'https://feuserisena.vercel.app', 
-    // origin: 'https://fe-userisena.vercel.app',
+    // origin: 'http://localhost:3000', 
+    origin: 'https://feuserisena.vercel.app',
 }))
 
 app.use(express.json());
