@@ -24,7 +24,7 @@ export const postLogin = async(req, res) => {
         const { uuid, username, email, role } = user;
 
         const accessToken = jwt.sign({ uuid, username, email, role }, process.env.ACCESS_TOKEN_SECRET, {
-            expiresIn: '3600s'
+            expiresIn: '20s'
         });
 
         const refreshToken = jwt.sign({ uuid, username, email, role }, process.env.REFRESH_TOKEN_SECRET, {
