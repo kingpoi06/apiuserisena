@@ -33,9 +33,9 @@ app.use(session({
     }
 }));
 
-(async()=>{
-    await db.sync();
-})();
+// (async()=>{
+//     await db.sync();
+// })();
 
 // try{
 //     await db.authenticate();
@@ -46,8 +46,8 @@ app.use(session({
 // }
 app.use(cors({
     credentials: true,
-    // origin: 'http://localhost:3000', 
-    origin: 'https://fe-userisena.vercel.app',
+    origin: 'http://localhost:3000', 
+    // origin: 'https://fe-userisena.vercel.app',
 }))
 
 app.use(express.json());
@@ -60,7 +60,7 @@ app.use(AuthPasienRoute);
 // app.use(AuthRoute);
 // app.use(AddPasienRoute);
 
-store.sync();
+// store.sync();
 
 
 app.listen(process.env.APP_PORT, ()=> {
